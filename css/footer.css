@@ -1,0 +1,136 @@
+footer {
+  background-color: #292929;
+}
+footer a{
+  color: #7B7B7B;
+  font-size: 13px;
+}
+div.border{
+  
+  border-top: 1px solid #343434;
+  border-bottom: 1px solid #343434;
+  margin-top: 35px;
+}
+footer div.wrap {
+  
+  max-width: 100%;
+  margin: 0 auto;
+}
+footer div.wrap ul.fnb {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer div.wrap ul.fnb div.container{
+  
+  display: flex;
+}
+footer div.wrap ul.fnb div.container ul {
+  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+footer div.wrap ul.fnb div.container ul li{
+  
+  width: 100%;
+}
+footer div.wrap ul.fnb div.container ul li a{
+  
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+footer div.wrap ul.fnb>li {
+  width: 25%;
+}
+footer div.wrap ul.fnb li>h2 {
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer div.wrap ul.fnb li>h2 a {
+
+  color: white;
+  font-size: 15px;
+}
+
+footer div.wrap ul.fnb li>ul {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div.wrap ul.fnb li>ul li {
+
+}
+
+footer div.wrap ul.fnb li>ul li a {
+  
+}
+
+footer div.wrap ul.fnb2 {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+footer div.wrap ul.fnb2 li {
+  
+  height: 41px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+}
+footer div.wrap ul.fnb2 li::after {
+  content: "";
+  height: 5px;
+  display: block;
+  border: 1px solid #7B7B7B;
+  margin-left: 25px;
+}
+footer div.wrap ul.fnb2 li:nth-child(8),footer div.wrap ul.fnb2 li:nth-child(9){
+  
+  border-left: 1px solid #343434;
+  padding: 0px 42px;
+}
+footer div.wrap ul.fnb2 li:nth-child(7)::after {
+  content: none;
+}
+footer div.wrap ul.fnb2 li:nth-child(8)::after,footer div.wrap ul.fnb2 li:nth-child(9)::after {
+  content: "";
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+footer div.wrap ul.fnb2 li a {
+  
+}
+footer div.wrap ul.fnb2 li:nth-child(1) a {
+  
+  color: #0D5FD1;
+}
+footer div.wrap address {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #545454;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 12px;
+}
+footer div.wrap p {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #545454;
+  text-align: center;
+  font-size: 12px;
+  line-height: 3;
+}
+footer a#top {
+  
+}
