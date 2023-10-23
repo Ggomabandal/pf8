@@ -4,7 +4,7 @@
 ## 원본 웹사이트
 <img src="https://github.com/Ggomabandal/pf8/assets/142555219/17540cde-40f1-4ca0-b805-ad0ef9409d26.png" width="400" height="200"/>
 
-https://www.hitejinro.com/
+원본 url : https://www.hitejinro.com/
 
 ## 클론 웹사이트 스크린 샷 링크
 클론코딩페이지 url : https://ggomabandal.github.io/pf8/
