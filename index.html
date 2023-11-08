@@ -3,358 +3,556 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하이트진로</title>
+    <title>서울아산병원</title>
+    <!-- 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
     <link rel="stylesheet" href="css/reset.css">
+    <!-- 구글폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- css연결 -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/subtitle.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/health.css">
+    <link rel="stylesheet" href="css/notinew.css">
+    <link rel="stylesheet" href="css/sns.css">
+    <link rel="stylesheet" href="css/fnb.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <!-- 자바스크립트 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"type=text/javascript></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("main section#product div.wrap ul li p").addClass("none");
-            $("main section#product div.wrap ul li a").addClass("none");
-            $("main section#product div.wrap ul li").mouseenter(function(){
-                $(this).contents().removeClass("none");
-                $(this).contents().addClass("block")
-            });
-            $("main section#product div.wrap ul li").mouseleave(function(){
-                $(this).contents().removeClass("block");
-                $(this).contents().addClass("none")
-            });
-        });
+
     </script>
-    <!-- 슬릭 -->
+    <!-- 타이틀 슬릭 -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.titleani').slick({
-                dots:true,
+            $('.titleslide').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1000,
-                speed:3000,
-                fade: true
-
-            });
-            $('.snsani').slick({
                 dots:true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
                 autoplay: true,
-                autoplaySpeed: 1000,
-                speed:3000
-
+                autoplaySpeed: 3000,
+                arrows: false
+            });
+            $('.healthtvani').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+            $('.healthinfoani').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+            $('.guideani').slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
             });
         });
     </script>
 </head>
 <body>
-    <!-- 상단영역 -->
-   <header id="top">
+    <header>
         <div class="wrap">
-            <nav>
-                <h1 class="h5">
-                    <a href="" class="a">하이트진로</a>
-                </h1>
-                <ul class="gnb flex">
-                    <li><a href="" class="a">COMPANY</a></li>
-                    <li><a href="" class="a">SOCIAL & MEDIA</a></li>
-                    <li><a href="" class="a">ESG</a></li>
-                    <li><a href="" class="a">CUSTOMER CENTER</a></li>
+            <div class="infocolor">
+                <div class="info flex">
+                    <ul class="list flex">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">나의차트</a></li>
+                        <li><a href="">병원둘러보기</a></li>
+                        <li><a href="">오시는길</a></li>
+                    </ul>
+                    <ul class="search flex">
+                        <li><a href="" class="languege">Languege</a></li>
+                        <li><a href="" class="search"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gnbwrap">
+                <div class="container flex">
+                    <h1 class="h4"><a href="">서울아산병원</a></h1>
+                    <ul class="gnb flex">
+                        <li><a href="">의료진/진료과</a></li>
+                        <li><a href="">진료예약/안내</a></li>
+                        <li><a href="">건강정보</a></li>
+                        <li><a href="">고객서비스</a></li>
+                        <li><a href="">의학교육</a></li>
+                        <li><a href="">병원이야기</a></li>
+                        <li><a href="">병원소개</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="title">
+        <div class="wrap titleslide">
+            <div class="back1">
+            </div>
+            <div class="back2">
+                <a href="" class="more">자세히보기</a>
+            </div>
+            <div class="back3">
+                <a href="" class="more">자세히보기</a>
+            </div>
+        </div>
+    </div>
+    <section id="search">
+        <div class="wrap">
+            <div class="searchcontainer">
+                <h2 class="h4">통합검색</h2>
+                <form action="" class="search"><input type="text" placeholder="검색어를 입력해주세요."><button class="search">검색</button></form>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="wrap flex flex-column padding100">
+            <h2 class="h3">주요 서비스</h2>
+            <ul class="service flex">
+                <li><a href="">의료진 찾기</a></li>
+                <li><a href="">진료과 찾기</a></li>
+                <li><a href="">진료예약</a></li>
+                <li><a href="">첫방문 고객 예약 상담</a></li>
+                <li><a href="">나의 차트</a></li>
+            </ul>
+            <ul class="doc flex">
+                <li><a href="">증명서(진단서, 소견서 등) 출력</a></li>
+                <li><a href="">의무기롣 및 영상CD발급</a></li>
+                <li><a href="">동의서, 위임장 양식 다운로드</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="reservation">
+        <div class="wrap flex padding100">
+            <h2 class="hide">예약 문의</h2>
+            <div class="first box">
+                <h3 class="h5">전화예약 및 문의</h3>
+                <p>1688-7575</p>
+            </div>
+            <div class="second box">
+                <div class="container">
+                    <h3 class="h5">건강검진 상담 및 예약</h3>
+                    <p>02-3010-5000</p>
+                </div>
+                <ul>
+                    <li class="box"><a href="">개인 프로그램</a></li>
+                    <li class="box"><a href="">법인 프로그램</a></li>
+                    <li class="box"><a href="">건강검진 예약 신청</a></li>
                 </ul>
-                <ul class="enb flex">
-                    <li><a href="" class="a">LOGIN</a></li>
-                    <li><a href="" class="a">JOIN</a></li>
-                    <li><a href="" class="a">RECRUIT</a></li>
-                    <li><a href="" class="a">LANGUAGE</a></li>
-                </ul>
-                <div class="wgnb hide">
-                    <div class="center flex">
-                        <div class="wsub">
-                            <h2 class="hide">COMPANY</h2>
-                            <ul class="text-center">
-                                <li><a href="">회사개요</a></li>
-                                <li><a href="">CEO 인사말</a></li>
-                                <li><a href="">가치체계</a></li>
-                                <li><a href="">연구소</a></li>
-                                <li><a href="">관계사</a></li>
-                                <li><a href="">사업장</a></li>
-                            </ul>
-                        </div>
-                        <div class="wsub">
-                            <h2 class="hide">제품소개</h2>
-                            <ul class="text-center">
-                                <li><a href="">제품정보</a></li>
-                                <li><a href="">주정</a></li>
-                                <li><a href="">석유화학</a></li>
-                                <li><a href="">Color Paste</a></li>
-                                <li><a href="">제품문의</a></li>
-                            </ul>
-                        </div>
-                        <div class="wsub">
-                            <h2 class="hide">지속가능경영</h2>
-                            <ul class="text-center">
-                                <li><a href="">정도경영</a></li>
-                                <li><a href="">환경경영</a></li>
-                                <li><a href="">품질경영</a></li>
-                            </ul>
-                        </div>
-                        <div class="wsub">
-                            <h2 class="hide">투자정보</h2>
-                            <ul class="text-center">
-                                <li><a href="">경영정보</a></li>
-                                <li><a href="">주가정보</a></li>
-                                <li><a href="">재무정보</a></li>
-                                <li><a href="">IR자료실</a></li>
-                            </ul>
-                        </div>
-                        <div class="wsub">
-                            <h2 class="hide">홍보센터</h2>
-                            <ul class="text-center">
-                                <li><a href="">KAI소식</a></li>
-                                <li><a href="">CI소개</a></li>
-                                <li><a href="">사회공헌</a></li>
-                            </ul>
-                        </div>
-                        <div class="wsub">
-                            <h2 class="hide">인재채용</h2>
-                            <ul class="text-center">
-                                <li><a href="">인사제도</a></li>
-                                <li><a href="">채용공고</a></li>
-                                <li><a href="">채용문의</a></li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="third box">
+                <h3 class="h5">암병원</h3>
+                <p>첫방문 고객 상담 : 02-3010-1300</p>
+            </div>
+            <div class="fourth box">
+                <h3 class="h5">어린이병원</h3>
+                <p>첫방문 고객 상담 : 02-3010-1230</p>
+            </div>
+            <div class="fifth box">
+                <h3 class="h5"><a href="">의사직/일반직 채용</a></h3>
+            </div>
+            <div class="sixth box">
+                <h3 class="h5"><a href="">빈소현황/사이버 조문</a></h3>
+            </div>
+        </div>
+    </section>
+    <section id="health">
+        <div class="wrap flex flex-column padding100">
+            <h2 class="h3">건강이야기</h2>
+            <div class="container flex">
+                <div class="health box">
+                    <h3 class="h5">건강TV</h3>
+                    <div class="hidden">
+                        <ul class="flex healthtvani">
+                            <li class="healthtv1"><a href="">[백세수업] 골다공증 치료..</a></li>
+                            <li class="healthtv2"><a href="">경추 디스크 협착증 치료는..</a></li>
+                            <li class="healthtv3"><a href="">심하면 뇌졸증을 유발하는 ..</a></li>
+                            <li class="healthtv4"><a href="">혈압키몸무게 올바른 측정 ..</a></li>
+                            <li class="healthtv5"><a href="">고혈압 환자가 꼭 알아야 ..</a></li>
+                            <li class="healthtv6"><a href="">신경내분비종양 환자를 위한..</a></li>
+                        </ul>
                     </div>
                 </div>
-                <a href="" class="ham">전체메뉴</a>
-            </nav>
-        </div>
-   </header>
-   <!-- 타이틀영역 -->
-   <div id="subtitle" class="height-full">
-        <div class="titleani wrap height-full flex flex-center flex-column flex-align-center">
-            <img src="img/i1.png" alt="켈리 포스터">
-            <img src="img/i2.png" alt="테라 포스터">
-            <img src="img/i3.png" alt="참이슬 포스터">
-            <img src="img/i4.png" alt="진로 포스터">
-            <img src="img/i5.png" alt="필라이트 포스터">
-            <img src="img/i6.png" alt="일품진로 OAK43 포스터">
-            <img src="img/i7.png" alt="일품진로 포스터">
-            <img src="img/i8.jpg" alt="진로1924 포스터">
-            <img src="img/i9.png" alt="매화수 포스터">
-            <img src="img/i10.png" alt="에스라이트 포스터">
-        </div>
-   </div>
-   <!-- 메인영역 -->
-   <main>
-        <section id="product">
-            <div class="wrap paddingB100">
-                <h2 class="h3">사용자들이 가장 많이 찾으신 컨텐츠를 소개합니다___</h2>
-                <ul class="list">
-                    <li>
-                        <h3>참이슬</h3>
-                        <p>국내유일 청정 대나무숯으로<br>4번 걸러 더 깨끗해진<br>참이슬 fresh</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>TERRA</h3>
-                        <p>청정라거<br>시대개막<br>TERRA</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>보도자료</h3>
-                        <p>언론 속 하이트진로의<br>다양한 소식을 알려 드립니다.</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>Kelly</h3>
-                        <p>덴마크 프리미엄 맥아 100%<br>- 더블 숙성 라거 켈리</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>사회공헌</h3>
-                        <p>하이트진로의 사회공헌 활동은<br>모두가 즐겁고 행복한 세상을<br>만들기 위한 실천입니다.</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>hite</h3>
-                        <p>EXTRA COLD공법으로<br>더 차갑게 돌아왔다</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>진로</h3>
-                        <p>진로 이즈 백!<br>소주의 원조, 진로가 돌아왔다</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>온에어 TVCF</h3>
-                        <p>하이트진로의 최신 광고영상을 소개합니다.</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                    <li>
-                        <h3>공장견학</h3>
-                        <p>하이트진로만의 최첨단 설비와<br>친환경이념이 담긴 생산공정을<br>직접 만나보세요.</p>
-                        <a href="">LEARN MORE</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section id="sns">
-            <div class="wrap paddingB100 paddingT50">
-                <h2 class="h4">최신 하이트진로 SNS</h2>
-                <ul class="snsani">
-                    <li class="sns1">
-                        <a href="">
-                            <h3 class="h4">FACEBOOK</h3>
-                            <p class="p">미숫가루 VS 수정과<br>@@할매 입맛 취저ㅋㅋ</p>
-                        </a>
-                    </li>
-                    <li class="sns2">
-                        <a href="">
-                            <h3 class="h4">INSTAGRAM</h3>
-                            <p class="p">여름 휴가 필수템으로 빠질 수 없는<br>귀여운 #이슬방울에디션 💧</p>
-                        </a>
-                    </li>
-                    <li class="sns3">
-                        <a href="">
-                            <h3 class="h4">BLOG</h3>
-                            <p class="p">참이슬과 떠나는 세계여행 15탄!<br>태국 똠얌꿍 레시피</p>
-                        </a>
-                    </li>
-                    <li class="sns4">
-                        <a href="">
-                            <h3 class="h4">FACEBOOK</h3>
-                            <p class="p">ㄹㅇ탕친자 인증.jpg<br>@@도전자 받음</p>
-                        </a>
-                    </li>
-                    <li class="sns5">
-                        <a href="">
-                            <h3 class="h4">INSTAGRAM</h3>
-                            <p class="p">울창한 나무 그늘 아래서<br>서늘한 바람이 느껴지는<br>이 계절의 찬란함</p>
-                        </a>
-                    </li>
-                    <li class="sns6">
-                        <a href="">
-                            <h3 class="h4">BLOG</h3>
-                            <p class="p">세상에 하나뿐인 필리 터프팅 러그 만들기</p>
-                        </a>
-                    </li>
-                    <li class="sns7">
-                        <a href="">
-                            <h3 class="h4">FACEBOOK</h3>
-                            <p class="p">여름의 끝이 보이는 말복!<br>뭘 먹어야 마지막까지 잘 이겨낼까?🤔</p>
-                        </a>
-                    </li>
-                    <li class="sns8">
-                        <a href="">
-                            <h3 class="h4">INSTAGRAM</h3>
-                            <p class="p">그림자를 뚫고 나오는 미모👥</p>
-                        </a>
-                    </li>
-                    <li class="sns9">
-                        <a href="">
-                            <h3 class="h4">BLOG</h3>
-                            <p class="p">초예술적 아트 콜라보!<br>진로X어반브레이크 두껍라운지<br>현장 스케치</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-   </main>
-   <!-- 하단영역 -->
-   <footer>
-        <div class="wrap paddingT50 paddingB100">
-            <ul class="fnb flex">
-                <li>
-                    <h2><a href="">COMPANY</a></h2>
-                    <div class="container">
-                        <ul class="sublist">
-                            <li><a href="">인사말</a></li>
-                            <li><a href="">경영철학</a></li>
-                            <li><a href="">연혁</a></li>
-                            <li><a href="">Introduction</a></li>
-                            <li><a href="">Investment</a></li>
-                        </ul>
-                        <ul class="sublist">
-                            <li><a href="">Location</a></li>
-                            <li><a href="">Factory</a></li>
-                            <li><a href="">Recruit</a></li>
-                            <li><a href="">Sports</a></li>
+                <div class="health box">
+                    <h3 class="h5">건강정보</h3>
+                    <div class="hidden">
+                        <ul class="flex healthinfoani">
+                            <li class="healthinfo1"><a href="">꼭 의사 두명이 필요한 심..</a></li>
+                            <li class="healthinfo2"><a href="">청소년기에 많이 발생하는 ..</a></li>
+                            <li class="healthinfo3"><a href="">운동으로 조절하는 체중과 ..</a></li>
+                            <li class="healthinfo4"><a href="">[알쏭달쏭 건강상식] 급증..</a></li>
+                            <li class="healthinfo5"><a href="">성공률 99% 서울아산병원..</a></li>
+                            <li class="healthinfo6"><a href="">3분만에 알아보는 심장 관..</a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <ul class="list flex">
+                <li class="box">
+                    <a href="">
+                        <h3 class="h5">질환백과</h3>
+                    </a>
                 </li>
-                <li>
-                    <h2><a href="">SOCIAL & MEDIA</a></h2>
-                    <ul class="sublist">
-                        <li><a href="">Social board</a></li>
-                        <li><a href="">Media</a></li>
-                        <li><a href="">마케팅 성공사례</a></li>
-                    </ul>
+                <li class="box">
+                    <a href="">
+                        <h3 class="h5">증상백과</h3>
+                    </a>
                 </li>
-                <li>
-                    <h2><a href="">ESG</a></h2>
-                    <ul class="sublist">
-                        <li><a href="">지속가능환경경영</a></li>
-                        <li><a href="">식품안전경영</a></li>
-                        <li><a href="">안전보건경영</a></li>
-                        <li><a href="">CSR</a></li>
-                        <li><a href="">Ethical Managemaent</a></li>
-                        <li><a href="">기업지배구조</a></li>
-                        <li><a href="">지속가능경영보고서</a></li>
-                    </ul>
+                <li class="box">
+                    <a href="">
+                        <h3 class="h5">검사/시술/수술정보</h3>
+                    </a>
                 </li>
-                <li>
-                    <h2><a href="">CUSTOMER CENTER</a></h2>
-                    <ul class="sublist">
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Q & A</a></li>
-                        <li><a href="">주류상식 가이드</a></li>
-                        <li><a href="">기타</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="">BRAND</a></h2>
-                    <ul class="sublist">
-                        <li><a href="">맥주</a></li>
-                        <li><a href="">소주</a></li>
-                        <li><a href="">위스키</a></li>
-                        <li><a href="">와인</a></li>
-                        <li><a href="">수입와인</a></li>
-                        <li><a href="">사케</a></li>
-                        <li><a href="">기타 주류</a></li>
-                        <li><a href="">인터내셔널</a></li>
-                    </ul>
+                <li class="box">
+                    <a href="">
+                        <h3 class="h5">의약품 정보</h3>
+                    </a>
                 </li>
             </ul>
-            <div class="border">
-                <ul class="fnb2 flex">
-                    <li><a href="">개인정보처리방침</a></li>
-                    <li><a href="">회원이용약관</a></li>
-                    <li><a href="">이메일무단수집거부</a></li>
-                    <li><a href="">동반성장</a></li>
-                    <li><a href="">청음고(부정제보)</a></li>
-                    <li><a href="">공시정보 관리규정</a></li>
-                    <li><a href="">공정거래자율준수</a></li>
-                    <li><a href="">하이트진로 SNS</a></li>
-                    <li><a href="">패밀리 사이트</a></li>
+        </div>
+    </section>
+    <section id="notinew">
+        <div class="wrap padding100 flex">
+            <h2 class="hide">공지&뉴스</h2>
+            <div class="container">
+                <h3 class="h4">소식/공지</h3>
+                <ul class="box">
+                    <li>
+                        <a href="">서울아산병원 갤러리 2024년 전시 신청</a>
+                        <time>2023.08.16</time>
+                    </li>
+                    <li>
+                        <a href="">코로나19 예방을 위한 내원객 협조 안내</a>
+                        <time>2023.08.02</time>
+                    </li>
+                    <li>
+                        <a href="">서울아산병원 정보보호 인증</a>
+                        <time>2023.07.24</time>
+                    </li>
                 </ul>
             </div>
-            <address>(06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 / 대표전화 080-210-0150 / 사업자등록번호 214-81-00777</address>
-            <p class="p copyright">Copyright© 2016 HITEJINRO CO.LTD. ALL RIGHTS RESERVED.</p>
+            <div class="container">
+                <h3 class="h4">뉴스</h3>
+                <ul class="box">
+                    <li>
+                        <a href="">젊은 나이에 갑자기 눈앞 뿌옇게 보이는 ‘중심장액망막병..</a>
+                        <time>2023.08.23</time>
+                    </li>
+                    <li>
+                        <a href="">세포 전처리에 따른 세포 내부 변화, 광회절 단층촬영 ..</a>
+                        <time>2023.08.21</time>
+                    </li>
+                    <li>
+                        <a href="">초음파 뇌수술실 개소</a>
+                        <time>2023.08.18</time>
+                    </li>
+                </ul>
+            </div>
+            <div class="img box"><a href=""></a></div>
+            <div class="img box"><a href=""></a></div>
+            <div class="img box"><a href=""></a></div>
         </div>
-        <a href="#top" class="btop">TOP</a>
-   </footer>
+    </section>
+    <section id="sns">
+        <div class="wrap padding100">
+            <h2 class="h3">서울아산병원 SNS</h2>
+            <ul class="list flex">
+                <li><a href="">페이스북</a></li>
+                <li><a href="">인스타그램</a></li>
+                <li><a href="">유튜브</a></li>
+                <li><a href="">네이버블로그</a></li>
+                <li><a href="">네이버티비</a></li>
+                <li><a href="">카카오스토리</a></li>
+                <li><a href="">네이버포스트</a></li>
+                <li><a href="">카카오티비</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="fnb">
+        <div class="wrap padding100">
+            <h2 class="hide">바로가기</h2>
+            <ul class="list guideani">
+                <li class="box guide1"><a href="">오시는길</a></li>
+                <li class="box guide2"><a href="">주차안내</a></li>
+                <li class="box guide3"><a href="">출입증발급</a></li>
+                <li class="box guide4"><a href="">병원둘러보기</a></li>
+                <li class="box guide5"><a href="">편의시설</a></li>
+                <li class="box guide6"><a href="">고객의소리</a></li>
+                <li class="box guide7"><a href="">칭찬코너</a></li>
+                <li class="box guide8"><a href="">나눔/후원</a></li>
+                <li class="box guide9"><a href="">자원봉사</a></li>
+                <li class="box guide10"><a href="">사회공헌</a></li>
+                <li class="box guide11"><a href="">건강강좌</a></li>
+                <li class="box guide12"><a href="">학술행사</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="first">
+                <h2 class="h5">서울아산병원</h2>
+                <ul class="fnb">
+                    <li><a href="">환자권리장전</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">의료정보운영방침</a></li>
+                    <li><a href="">비급여진료비</a></li>
+                    <li><a href="">의무기록사본발급안내</a></li>
+                    <li><a href="">위변조문서확인</a></li>
+                    <li><a href="">이메일주소수집거부</a></li>
+                    <li><a href="">원격지원서비스</a></li>
+                    <li><a href="">홈페이지이용문의</a></li>
+                </ul>
+            </div>
+            <div class="second">
+                <address>05505 서울특별시 송파구 올림픽로 43길 88 서울아산병원<span class="block"></span>
+                    TEL 1688-7575 / webmaster@amc.seoul.kr<span class="block"></span>
+                    Copyright@2014 by Asan Medical Center. All Rights reserved.</address>
+                <ul class="link">
+                    <li>
+                        <select name="" id="">
+                            <optgroup label="======진료과======">
+                                <option  selected value="">=====진료과=====</option>
+                                <option value="">가정의학과</option>
+                                <option value="">간담도췌외과</option>
+                                <option value="">간이식ㆍ간담도외과</option>
+                                <option value="">감염내과</option>
+                                <option value="">건강의학과</option>
+                                <option value="">구강악안면외과</option>
+                                <option value="">내과</option>
+                                <option value="">내분비내과</option>
+                                <option value="">내분비외과</option>
+                                <option value="">노년내과</option>
+                                <option value="">대장항문외과</option>
+                                <option value="">류마티스내과</option>
+                                <option value="">마취통증의학과</option>
+                                <option value="">방사선종양학과</option>
+                                <option value="">병리과</option>
+                                <option value="">비뇨의학과</option>
+                                <option value="">산부인과</option>
+                                <option value="">성형외과</option>
+                                <option value="">소화기내과</option>
+                                <option value="">신ㆍ췌장이식외과</option>
+                                <option value="">신경과</option>
+                                <option value="">신경외과</option>
+                                <option value="">신장내과</option>
+                                <option value="">심장내과</option>
+                                <option value="">심장외과</option>
+                                <option value="">심장혈관흉부외과</option>
+                                <option value="">안과</option>
+                                <option value="">알레르기내과</option>
+                                <option value="">영상의학과</option>
+                                <option value="">위장관외과</option>
+                                <option value="">유방외과</option>
+                                <option value="">응급의학과</option>
+                                <option value="">이비인후과</option>
+                                <option value="">임상약리학과</option>
+                                <option value="">재활의학과</option>
+                                <option value="">정신건강의학과</option>
+                                <option value="">정형외과</option>
+                                <option value="">종양내과</option>
+                                <option value="">중환자ㆍ외상외과</option>
+                                <option value="">진단검사의학과</option>
+                                <option value="">치과 교정과</option>
+                                <option value="">치과 보존과</option>
+                                <option value="">치과 보철과</option>
+                                <option value="">치주과</option>
+                                <option value="">폐식도외과</option>
+                                <option value="">피부과</option>
+                                <option value="">핵의학과</option>
+                                <option value="">혈관외과</option>
+                                <option value="">혈액내과</option>
+                                <option value="">호흡기내과</option>
+                            </optgroup>
+                            <optgroup label="======암병원======">
+                                <option value="">CAR T 센터</option>
+                                <option value="">간암센터</option>
+                                <option value="">난소·자궁암센터</option>
+                                <option value="">뇌종양센터</option>
+                                <option value="">담도 및 췌장암센터</option>
+                                <option value="">대장암센터</option>
+                                <option value="">두경부암센터</option>
+                                <option value="">비뇨기암센터</option>
+                                <option value="">식도암센터</option>
+                                <option value="">암환자라이프케어센터</option>
+                                <option value="">완화의료센터</option>
+                                <option value="">위암센터</option>
+                                <option value="">유방암센터</option>
+                                <option value="">유전체맞춤암치료센터</option>
+                                <option value="">육종ㆍ희귀암센터</option>
+                                <option value="">테라노스틱스센터</option>
+                                <option value="">폐암센터</option>
+                                <option value="">피부암센터</option>
+                                <option value="">혈액암 및 골수이식센터</option>
+                            </optgroup>
+                            <optgroup label="====어린이병원=====">
+                                <option value="">소아감염과</option>
+                                <option value="">소아내분비대사과</option>
+                                <option value="">소아마취통증의학과</option>
+                                <option value="">소아비뇨의학과</option>
+                                <option value="">소아소화기영양과</option>
+                                <option value="">소아신경과</option>
+                                <option value="">소아신경외과</option>
+                                <option value="">소아신장과</option>
+                                <option value="">소아심장외과</option>
+                                <option value="">소아안과</option>
+                                <option value="">소아영상의학과</option>
+                                <option value="">소아외과</option>
+                                <option value="">소아재활의학과</option>
+                                <option value="">소아전문응급센터</option>
+                                <option value="">소아정신건강의학과</option>
+                                <option value="">소아정형외과</option>
+                                <option value="">소아중환자과</option>
+                                <option value="">암센터</option>
+                                <option value="">심장과</option>
+                                <option value="">종양혈액과</option>
+                                <option value="">소아치과</option>
+                                <option value="">소아호흡기ㆍ알레르기센터</option>
+                                <option value="">신생아과</option>
+                                <option value="">의학유전학과</option>
+                                <option value="">척추측만증센터</option>
+                            </optgroup>
+                            <optgroup label="=====심장병원=====">
+                                <option value="">대동맥질환센터</option>
+                                <option value="">말초혈관질환센터</option>
+                                <option value="">심방세동센터</option>
+                                <option value="">심부전/심장이식센터</option>
+                                <option value="">심장병예방재활센터</option>
+                                <option value="">심장병원 지원부문</option>
+                                <option value="">심장영상센터</option>
+                                <option value="">판막질환센터</option>
+                                <option value="">협심증심근경색증센터</option>
+                            </optgroup>
+                        </select><a href="">바로가기</a>
+                    </li>
+                    <li><select name="" id="">
+                        <optgroup label="재단 및 재단산하병원">
+                            <option selected value="">재단 및 재단산하병원</option>
+                            <option value="">아산사회복지재단</option>
+                            <option value="">강릉아산병원</option>
+                            <option value="">금강아산병원</option>
+                            <option value="">보성아산병원</option>
+                            <option value="">보령아산병원</option>
+                            <option value="">영덕아산병원</option>
+                            <option value="">정읍아산병원</option>
+                            <option value="">홍천아산병원</option>
+                        </optgroup>
+                    </select><a href="">바로가기</a></li>
+                    <li><select name="" id="">
+                        <optgroup label="=======센터=======">
+                            <option selected value="">센터/클리닉/연구원/기타</option>
+                            <option value="">간센터</option>
+                            <option value="">건강증진센터</option>
+                            <option value="">국제진료센터</option>
+                            <option value="">뇌졸중센터</option>
+                            <option value="">담도ㆍ췌장센터</option>
+                            <option value="">당뇨병센터</option>
+                            <option value="">로봇수술센터</option>
+                            <option value="">로봇수술트레이닝센터</option>
+                            <option value="">선천성심장병센터</option>
+                            <option value="">소화기내시경센터</option>
+                            <option value="">스트레스심리상담센터</option>
+                            <option value="">스포츠건강의학센터</option>
+                            <option value="">염증성장질환센터</option>
+                            <option value="">응급의료센터</option>
+                            <option value="">의학유전학센터</option>
+                            <option value="">임플란트센터</option>
+                            <option value="">장기이식센터</option>
+                            <option value="">전립선센터</option>
+                            <option value="">진료협력센터</option>
+                            <option value="">천식ㆍCOPD센터</option>
+                            <option value="">태아치료센터</option>
+                            <option value="">폐고혈압·정맥혈전센터</option>
+                        </optgroup>
+                        <optgroup label="======클리닉======">
+                            <option value="">남성건강클리닉</option>
+                            <option value="">뇌전증클리닉</option>
+                            <option value="">대장항문클리닉</option>
+                            <option value="">마르판클리닉</option>
+                            <option value="">생식의학 및 불임클리닉</option>
+                            <option value="">소아당뇨클리닉</option>
+                            <option value="">신경중재클리닉</option>
+                            <option value="">유방암클리닉</option>
+                            <option value="">인공와우클리닉</option>
+                        </optgroup>
+                        <optgroup label="==아산생명과학연구원==">
+                            <option value="">R&D사업단</option>
+                            <option value="">빅데이터연구센터</option>
+                            <option value="">세포치료센터</option>
+                            <option value="">아산생명과학연구원</option>
+                            <option value="">융합연구지원센터</option>
+                            <option value="">의공학연구소</option>
+                            <option value="">의생명연구소</option>
+                            <option value="">임상시험센터</option>
+                            <option value="">임상연구보호센터</option>
+                            <option value="">임상의학연구소</option>
+                            <option value="">조직세포자원센터</option>
+                        </optgroup>
+                        <optgroup label="=======기타=======">
+                            <option value="">AMC SCIENCES</option>
+                            <option value="">AMC동문회</option>
+                            <option value="">간호부</option>
+                            <option value="">교육수련실</option>
+                            <option value="">방사선안전관리실</option>
+                            <option value="">시뮬레이션센터</option>
+                            <option value="">아산원우회</option>
+                            <option value="">아카데미</option>
+                            <option value="">약제팀</option>
+                            <option value="">영상의학팀</option>
+                            <option value="">의공팀</option>
+                            <option value="">의학통계학과</option>
+                            <option value="">임상연구심의위원회</option>
+                            <option value="">장례식장</option>
+                            <option value="">중증외상팀</option>
+                            <option value="">중환자실</option>
+                        </optgroup>
+                    </select><a href="">바로가기</a></li>
+                    <li><select name="" id="">
+                        <optgroup label="관련기관">
+                            <option selected value="">관련기관</option>
+                            <option value="">아산생명과학연구원</option>
+                            <option value="">울산대학교의과대학</option>
+                            <option value="">의학도서관</option>
+                            <option value="">스마트아카데미</option>
+                            <option value="">아산의료원 연보</option>
+                        </optgroup>
+                    </select><a href="">바로가기</a></li>
+                </ul>
+                <ul class="certificate">
+                    <li><a href="">이미지</a></li>
+                    <li><a href="">이미지</a></li>
+                    <li><a href="">이미지</a></li>
+                    <li><a href="">이미지</a></li>
+                </ul>
+            </div>
+            <ul class="sns">
+                <li><a href="">페이스북</a></li>
+                <li><a href="">인스타그램</a></li>
+                <li><a href="">유튜브</a></li>
+                <li><a href="">네이버블로그</a></li>
+                <li><a href="">트위터</a></li>
+                <li><a href="">네이버티비</a></li>
+                <li><a href="">카카오스토리</a></li>
+                <li><a href="">네이버포스트</a></li>
+                <li><a href="">카카오티비</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-</html>
 </html>
